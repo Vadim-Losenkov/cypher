@@ -1,0 +1,51 @@
+.container {
+  max-width: 1490px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+body {
+  // min-width: 320px;
+  min-width: 1920px;
+  overflow-x: hidden;
+  font-family: 'TT Norms';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #443A5B;
+  background: linear-gradient(81.6deg, #0A051A -4.33%, rgba(20, 11, 47, 0.98) 64.72%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
