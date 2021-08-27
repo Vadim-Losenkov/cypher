@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ProjectName</title>
-  <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+  <title>Cypher</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
   
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script> <script>eruda.init();</script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script> <script>eruda.init();</script> -->
   
 </head>
 <body>
@@ -24,23 +24,23 @@
               </a>
             </li>
             <li class="header__info-item">
-              <a href="#" class="header__info-link">
+              <a href="#" class="header__info-navlink">
                 Whitepaper
               </a>
             </li>
             <li class="header__info-item">
-              <a href="#" class="header__info-link">
+              <a href="#" class="header__info-navlink">
                 Chart
               </a>
             </li>
             <li class="header__info-item">
-              <a href="#" class="header__info-link">
+              <a href="#" class="header__info-navlink">
                 <img src="images/icons/tg.svg" alt="">
               </a>
             </li>
           </ul>
           <div class="header__info-banner">
-            <img class="header__banner-image" src="images/content/banner-logo.svg" alt="">
+            <img class="header__banner-image" src="images/content/banner-logo.png" alt="">
             <span class="header__banner-text">
               Our coin looks like this!
             </span>
@@ -62,6 +62,9 @@
               What is it?
             </a>
           </div>
+          <a href="#" class="header__info-arrow">
+            <img src="images/icons/arrow-down.svg" alt="">
+          </a>
         </div>
         <div class="header__image">
           <img src="images/content/header-image.png" alt="" class="header__image-picture">
@@ -70,27 +73,35 @@
     </div>
   </header>
     <main class="main">
-      <section class="info">
-        <div class="container">
-          <div class="info__inner">
-            <div class="info__item">
-              <img src="images/content/info-1.png" class="info__item-image" alt="">
-              <h5 class="info__item-title">Earn While Sleeping </h5>
-              <p class="info__item-text"></p>
-            </div>
-            <div class="info__item">
-              <img src="images/content/info-2.png" class="info__item-image" alt="">
-              <h5 class="info__item-title"></h5>
-              <p class="info__item-text"></p>
-            </div>
-            <div class="info__item">
-              <img src="images/content/info-.png" class="info__item-image" alt="">
-              <h5 class="info__item-title"></h5>
-              <p class="info__item-text"></p>
+      <div class="info__wrapper">
+        <section class="info">
+          <div class="container">
+            <div class="info__inner">
+              <div class="info__item">
+                <img src="images/content/info-1.png" class="info__item-image" alt="">
+                <div class="info__item-wrapper">
+                  <h5 class="info__item-title">Earn While Sleeping <img src="images/icons/sleep.png" alt=""></h5>
+                  <p class="info__item-text">With the auto-claim feature, all you need to do is hold $СDE to automatically receive DOGE and CAKE dividends in your wallet.</p>
+                </div>
+              </div>
+              <div class="info__item">
+                <img src="images/content/info-2.png" class="info__item-image" alt="">
+                <div class="info__item-wrapper">
+                  <h5 class="info__item-title">Dump Protection <img src="images/icons/key.png" alt=""></h5>
+                  <p class="info__item-text">To prevent whales we have multiple protections in place, such as: An extra 3% fee is applied to all sells. This reduces swing trading and negates.</p>
+                </div>
+              </div>
+              <div class="info__item">
+                <img src="images/content/info-3.png" class="info__item-image" alt="">
+                <div class="info__item-wrapper">
+                  <h5 class="info__item-title">Strong Community <img src="images/icons/like.png" alt=""></h5>
+                  <p class="info__item-text">This is a community run project, all major decisions are decided upon by the community. decisions are decided upon by the community. </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       
