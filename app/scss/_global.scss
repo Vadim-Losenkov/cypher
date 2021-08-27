@@ -20,7 +20,7 @@ button {
 
 body {
   // min-width: 320px;
-  //min-width: 1920px;
+  // min-width: 1920px;
   overflow-x: hidden;
   font-family: 'TT Norms';
   font-weight: 400;
@@ -53,4 +53,25 @@ body {
   font-size: 31px;
   line-height: 40px;
   color: #FFFFFF;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 30px;
+  }
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.icon-tg {
+  background-image: url('../images/icons/tg.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
 }
