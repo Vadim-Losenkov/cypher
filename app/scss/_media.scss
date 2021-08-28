@@ -1,0 +1,11 @@
+@media (max-width: 1360px) {
+  .header {
+    &__image {
+      right: -300px;
+      opacity: 0.7;
+    }
+    &__image img {
+      width: 70%;
+    }
+  }
+}

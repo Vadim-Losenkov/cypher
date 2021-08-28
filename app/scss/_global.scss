@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1490px;
   padding: 0 15px;
@@ -38,6 +44,10 @@ body {
 
 .info__wrapper {
   background: linear-gradient(180deg, #0E0723 0%, #0A051A 100%);
+}
+
+.banner__wrapper {
+  background: linear-gradient(180deg, #080318 71.24%, #0B061D 91.22%, #0D0720 105.67%);
 }
 
 .main {
