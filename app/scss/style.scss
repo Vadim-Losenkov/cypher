@@ -9,7 +9,7 @@
   padding: 60px 0;
   padding-bottom: 107px;
   background: linear-gradient(81.6deg, #0A051A -4.33%, rgba(20, 11, 47, 0.98) 64.72%);
-  overflow-x: hidden;
+  overflow: hidden;
   &__inner {
     position: relative;
   }
@@ -132,6 +132,7 @@
     line-height: 41px;
     letter-spacing: -0.005em;
     color: #FFFFFF;
+    text-align: center;
 
     &.pink-border {
       position: relative;
@@ -179,7 +180,8 @@
   
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   &__item {
@@ -187,6 +189,7 @@
     width: 100%;
     position: relative;
     padding-top: 255px;
+    margin: 0 15px;
   }
   &__item-image {
     position: absolute;
@@ -210,6 +213,7 @@
     display: flex;
     img {
       padding-left: 20px;
+      object-fit: contain;
     }
   }
 }
@@ -226,6 +230,9 @@
     background: linear-gradient(180deg, #110B28 -25.32%, rgba(17, 10, 42, 0) 143.62%);
     border-radius: 23px;
     width: 460px;
+  }
+  &__box {
+    margin-bottom: 30px;
   }
   &__col {
     margin-right: 40px;
@@ -339,6 +346,7 @@
       line-height: 41px;
       letter-spacing: -0.005em;
       color: #FFFFFF;
+      white-space: nowrap
     }
   }
 }
@@ -352,7 +360,7 @@
   }
   img {
     max-width: 430px;
-    width: 100%;
+    width: 50%;
   }
   &__info-title {
     font-weight: bold;
@@ -372,6 +380,10 @@
 
 .slider {
   margin-bottom: 140px;
+  overflow: hidden;
+  &__mobile {
+    display: none;
+  }
   &__line {
     padding: 62px 0;
     position: relative;
@@ -379,7 +391,7 @@
   &__line-activebar {
     background: linear-gradient(270deg, #F835FF 41.37%, rgba(248, 53, 255, 0) 100%);
     height: 6px;
-    width: 30%;
+    width: 50%;
     margin-bottom: -6px;
     z-index: 2;
     position: relative;
@@ -534,4 +546,4 @@
   }
 }
 
-@import "media";
+// @import "media";
