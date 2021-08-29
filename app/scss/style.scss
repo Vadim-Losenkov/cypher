@@ -229,7 +229,8 @@
     padding: 48px 52px;
     background: linear-gradient(180deg, #110B28 -25.32%, rgba(17, 10, 42, 0) 143.62%);
     border-radius: 23px;
-    width: 460px;
+    max-width: 460px;
+    width: 100%;
   }
   &__box {
     margin-bottom: 30px;
@@ -395,6 +396,7 @@
     margin-bottom: -6px;
     z-index: 2;
     position: relative;
+    transition: all .5s;
   }
 
   &__line-item {
@@ -405,6 +407,9 @@
     border: 10px solid #301D42;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .5s;
     // transform: translateY(-50%);
     z-index: 10;
     &:nth-child(odd)::before {
@@ -429,13 +434,13 @@
   &__line-item.checked {
     width: 33px;
     height: 33px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #F835FF;
     border-radius: 50%;
     border: 10px solid #D519DD;
     box-shadow: 0px 4px 72px 3px #F835FF;
-    &::before {
-      background-color: #F735FF;
-    }
+   
   }
   &__line-item.active {
     width: 33px;
@@ -444,12 +449,10 @@
     border-radius: 50%;
     border: 12px solid #D519DD;
     box-shadow: 0px 0px 0px 3px rgba(139, 27, 143, 0.87);
-    position: relative;
+    
     z-index: 10;
-    transform: translateY(18px);
-    &::before {
-      background-color: #fff;
-    }
+    // transform: translateY(18px);
+    
   }
   
   &__line-bar {
@@ -466,6 +469,7 @@
     display: inline-block;
     background-color: transparent;
     border: 2px solid #1B1431;
+    transition: all .5s;
     &.checked {
       border: 2px solid transparent;
       background: linear-gradient(180deg, #110B28 -25.32%, rgba(15, 10, 33, 0.3) 143.62%);
@@ -500,9 +504,10 @@
   margin-bottom: 100px;
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   &__card {
+    margin: 0 15px;
     background: linear-gradient(180deg, #110B28 -25.32%, rgba(17, 10, 42, 0) 143.62%);
     padding: 39px 50px;
     border-radius: 23px;
@@ -511,6 +516,7 @@
     position: relative;
     padding-top: 260px;
     margin-top: 200px;
+    
     &.active {
       margin-top: 70px;
     }
@@ -546,4 +552,4 @@
   }
 }
 
-// @import "media";
+@import "media";

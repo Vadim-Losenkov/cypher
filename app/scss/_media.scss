@@ -73,6 +73,16 @@
       margin-left: 50px;
     }
   }
+
+
+  .team {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__card {
+      margin: 40px 0;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -152,6 +162,12 @@
   .header__info-box {
     margin-bottom: 50px;
   }
+
+  .testimonials {
+    &__col {
+      margin: 0 !important;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -190,6 +206,10 @@
   .slider__mobile {
     transform: scale(.7) translate(-70px, -300px);
   }
+
+  .banner.developers {
+    margin-top: -300px;
+  }
 }
 @media (max-width: 500px) {
   .banner {
@@ -198,6 +218,13 @@
     }
     .banner__image {
       display: none;
+    }
+  }
+
+  .team {
+    &__card {
+      padding: 15px 30px;
+      padding-top: 250px;
     }
   }
 }

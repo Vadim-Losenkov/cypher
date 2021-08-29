@@ -1,9 +1,12 @@
 class Slider {
-  constructor(selector) {
+  constructor(selector, info) {
     this.$main = document.querySelector(selector)
+    this.info = info
     
     this.$items = []
     this.$buttons = []
+
+    this.$line = this.$main.querySelector('[data-slider="activeBar"]')
     
     this.init()
   }
@@ -17,27 +20,38 @@ class Slider {
     this.$buttons = this.$main.querySelectorAll('[data-slider="button"]')
     
     this.$buttons.forEach($el => {
-      function clear() {
-        $el.classList.remove('checked')
-        $el.classList.remove('active')
-      }
+      
       $el.addEventListener('click', event => {
         const $target = event.target.closest('[data-slider="button"]')
         const id = $target.dataset.id
         
-        this.clear()
+        clear(this.$buttons)
+        clear(this.$items)
+
+        // this.$items[id - 1].classList.add('active')
+        $target.classList.add('active')
+        this.$line.style.width = getComputedStyle($target)[this.info]
         
+        this.$main.querySelector(`[data-slider="item"][data-id="${id}"]`).classList.add('active')
+        this.$items.forEach($el => {
+          if ($el.dataset.id <= (id - 1)) {
+            $el.classList.add('checked')
+          }
+        })
+        for (let i = 0; i < (id - 1); i++) {
+          this.$buttons[i].classList.add('checked')
+        }
       })
     })
-    
-    clear() {
-      this.$buttons.forEach($el => {
-        $el.classList.remove('.checked')
-        $el.classList.remove('.active')
-      })
-    }
     
   }
 }
 
-new Slider('.slider__inner')
+function clear(arr) {
+  arr.forEach($el => {
+    $el.classList.remove('checked')
+    $el.classList.remove('active')
+  })
+}
+
+new Slider('.slider__inner', 'left')
