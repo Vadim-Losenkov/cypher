@@ -29,8 +29,8 @@ button {
 }
 
 body {
-  min-width: 1920px;
-  zoom: 80%;
+  // min-width: 1920px;
+  zoom: 90%;
   overflow-x: hidden;
   font-family: 'TT Norms';
   font-weight: 400;
@@ -51,6 +51,7 @@ body {
 }
 
 .banner__wrapper {
+  padding-top: 100px;
   background: linear-gradient(180deg, #080318 71.24%, #0B061D 91.22%, #0D0720 105.67%);
 }
 
@@ -102,7 +103,27 @@ body {
     animation-duration: 1s;
   }
   &.banner {
+    animation-duration: 2s;
     animation-name: animateImage2;
+  }
+
+  &.one {
+    animation-duration: 2.7s;
+  }
+  &.two {
+    animation-duration: 2.8s;
+  }
+  &.three {
+    animation-duration: 2.9s;
+  }
+  &.four {
+    animation-duration: 3s;
+  }
+  &.five {
+    animation-duration: 3.1s;
+  }
+  &.six {
+    animation-duration: 3.3s;
   }
 }
 
@@ -116,9 +137,9 @@ body {
 }
 @keyframes animateImage2 {
   from {
-    transform: translateY(0);
+    top: 50%;
   }
   to {
-    transform: translateY(20px);
+    top: 40%;
   }
 }
