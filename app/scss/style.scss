@@ -4,6 +4,7 @@
 @import "reset";
 @import "global";
 @import "libs/normalize";
+@import "libs";
 
 .header {
   padding: 60px 0;
@@ -26,7 +27,7 @@
     width: 100%;
     position: relative;
     z-index: 5;
-    &::after {
+    .animated-image.bottom {
       @extend %icon;
       background-image: url('../images/content/dog.png');
       right: 20px;
@@ -75,7 +76,7 @@
       left: -25px;
       top: -6px;
     }
-    &::before {
+    .animated-image.first {
       @extend %icon;
       background-image: url('../images/content/dog.png');
       left: -90px;
@@ -83,7 +84,7 @@
       height: 70px;
       background-size: contain;
     }
-    &::after {
+    .animated-image.second {
       @extend %icon;
       background-image: url('../images/content/dog.png');
       right: -100px;
@@ -109,6 +110,7 @@
     font-weight: 700;
     font-size: 72px;
     line-height: 85px;
+    margin-bottom: 20px;
     span {
       text-shadow: 1px 0 1px #fff, 
       0 1px 1px #fff, 
@@ -137,8 +139,12 @@
     &.pink-border {
       position: relative;
       border-radius: 9px;
-      background: #0A051A;
+      background-color: rgba(20, 11, 47, 0.98);
       text-align: center;
+      transition: .5s;
+      &:hover {
+        background-color: rgba(#0A051A, .0);
+      }
       &::before {
         content: "";
         position: absolute;
@@ -149,8 +155,27 @@
         background: linear-gradient(90deg, #F835FF, #3f0041);
         border-radius: 9px;
         z-index: -1;
+        animation: gradient 3s infinite linear; // 10s - скорость анимации
+        // background-size: 200%;
+        background-position: 0% 0%;
+        background-size: 400% 400%;
       }
     }
+    @keyframes gradient {
+        0% {
+        background-position: 0% 50%
+        }
+        50% {
+        background-position: 100% 50%
+        }
+        100% {
+        background-position: 0% 50%
+        }
+    }
+    /*
+    &.pink-border {
+      
+    } */
     &.no-border {
       background-color: #150E2B;
       border-color: #150E2B;
@@ -171,6 +196,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s;
+    &:hover {
+      background-color: #F835FF;
+    }
   }
 }
 
@@ -181,7 +210,6 @@
   &__inner {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
   
   &__item {
@@ -502,6 +530,7 @@
 
 .team {
   margin-bottom: 100px;
+  overflow-x: hidden;
   &__inner {
     display: flex;
     justify-content: center;
@@ -552,4 +581,4 @@
   }
 }
 
-@import "media";
+// @import "media";

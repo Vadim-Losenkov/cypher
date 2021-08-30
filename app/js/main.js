@@ -28,9 +28,9 @@ class Slider {
         clear(this.$buttons)
         clear(this.$items)
 
-        // this.$items[id - 1].classList.add('active')
         $target.classList.add('active')
-        this.$line.style.width = getComputedStyle($target)[this.info]
+        this.$line.style[this.info[0]] = getComputedStyle($target)[this.info[1]]
+        console.log(getComputedStyle($target)[this.info[1]]);
         
         this.$main.querySelector(`[data-slider="item"][data-id="${id}"]`).classList.add('active')
         this.$items.forEach($el => {
@@ -54,4 +54,7 @@ function clear(arr) {
   })
 }
 
-new Slider('.slider__inner', 'left')
+new Slider('.slider__inner', ['width', 'left'])
+new Slider('.slider__mobile', ['height', 'top'])
+
+new WOW().init();

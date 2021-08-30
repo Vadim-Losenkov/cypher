@@ -1,4 +1,7 @@
 @media (max-width: 1366px) {
+  body {
+    zoom: 100%;
+  }
   .header {
     .icon-tg {
       background-image: url('../images/icons/tg-white.svg');
@@ -13,6 +16,9 @@
     &__info-item a {
       color: #fff;
     }
+  }
+  .info__inner {
+    flex-wrap: wrap;
   }
   .banner {
     .banner__image {
@@ -44,13 +50,13 @@
     display: flex;
     
     .slider__line {
-      height: 850px;
+      height: 900px;
       width: 6px;
       position: relative;
       // padding: 0 50px;
     }
     .slider__line-bar {
-      height: 100%;
+      // height: 850px;
       margin-left: 20px;
     }
     .slider__line-activebar {
@@ -86,6 +92,9 @@
 }
 
 @media (max-width: 1000px) {
+  .header__image {
+    display: none;
+  }
   .testimonials__box {
     flex-wrap: wrap;
     justify-content: center;
