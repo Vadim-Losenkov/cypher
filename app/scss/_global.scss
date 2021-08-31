@@ -30,13 +30,14 @@ button {
 
 body {
   // min-width: 1920px;
-  zoom: 90%;
+  zoom: 80%;
   overflow-x: hidden;
   font-family: 'TT Norms';
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 36px;
   color: #443A5B;
+  letter-spacing: 1px;
   background: linear-gradient(81.6deg, #0A051A -4.33%, rgba(20, 11, 47, 0.98) 64.72%);
 }
 
@@ -47,6 +48,7 @@ body {
 }
 
 .info__wrapper {
+  padding-top: 150px;
   background: linear-gradient(180deg, #0E0723 0%, #0A051A 100%);
 }
 
@@ -83,13 +85,18 @@ body {
 }
 
 .icon-tg {
-  background-image: url('../images/icons/tg.svg');
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  margin-bottom: -5px;
+  path {
+    fill: #605581;
+    transition: .3s;
+  }
 }
+.icon-tg:hover{
+  path {
+    fill: #fff;
+  }
+}
+
+
 
 .animated-image {
   animation-duration: 2s;

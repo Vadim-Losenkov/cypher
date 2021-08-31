@@ -5,13 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- device-width, initial-scale=1.0 -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cypher</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
-  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>
-    eruda.init();
-  </script> -->
-
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script> <script>eruda.init();</script>
+  
 </head>
 <body>
   <div class="wrapper">
@@ -30,17 +26,21 @@
                 </a>
               </li>
               <li class="header__info-item">
-                <a href="#" class="header__info-navlink">
+                <a href="assets/whitepaper.pdf" class="header__info-navlink">
                   Whitepaper
                 </a>
               </li>
               <li class="header__info-item">
-                <a href="#" class="header__info-navlink">
-                  Chart
+                <a href="https://pancakeswap.finance" class="header__info-navlink">
+                  Buy
                 </a>
               </li>
               <li class="header__info-item">
-                <a href="https://t.me/" class="header__info-navlink icon-tg"></a>
+                <a href="https://t.me/" class="header__info-navlink icon-tg">
+                  <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71862 9.04036C8.42949 6.07678 12.9045 4.123 15.1435 3.17903C21.5365 0.483813 22.8649 0.0156247 23.7307 0.000164837C23.9212 -0.00323539 24.347 0.0446012 24.6228 0.271446C24.8557 0.46299 24.9197 0.721738 24.9504 0.903342C24.9811 1.08495 25.0192 1.49865 24.9889 1.8219C24.6424 5.51145 23.1434 14.465 22.3808 18.5974C22.0581 20.3459 21.4227 20.9322 20.8076 20.9896C19.4707 21.1143 18.4556 20.0941 17.1608 19.2338C15.1348 17.8876 13.9901 17.0496 12.0235 15.736C9.75066 14.2179 11.224 13.3835 12.5193 12.0199C12.8583 11.663 18.7484 6.23264 18.8624 5.74002C18.8767 5.67841 18.8899 5.44875 18.7553 5.32749C18.6207 5.20622 18.422 5.24769 18.2787 5.28067C18.0754 5.32742 14.8388 7.49585 8.56858 11.786C7.64986 12.4254 6.8177 12.737 6.07212 12.7206C5.25018 12.7026 3.6691 12.2496 2.49372 11.8623C1.05207 11.3873 -0.0937162 11.1362 0.00605648 10.3295C0.0580243 9.90932 0.628878 9.47961 1.71862 9.04036Z" fill="#fff"/>
+                  </svg>
+                </a>
               </li>
             </ul>
             <div class="header__info-banner wow slideInLeft" data-wow-duration="1.3s">
@@ -213,29 +213,31 @@
         <section class="slider wow fadeInUp">
           <div class="container">
             <div class="slider__inner">
-              <div class="slider__item checked" data-id="1" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/pc.png" alt=""> Website Launch
-                </h5>
-                <p class="slider__item-date">
-                  July 2021
-                </p>
-              </div>
-              <div class="slider__item active" data-id="3" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/dog.png" alt=""> Organic awareness <br> campaign
-                </h5>
-                <p class="slider__item-date active">
-                  July 2021
-                </p>
-              </div>
-              <div class="slider__item" data-id="5" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/nlo.png" alt="">  Listing on <span>CoinMarketCap</span>
-                </h5>
-                <p class="slider__item-date">
-                  Coming soon
-                </p>
+              <div class="slider__inner-wrapper">
+                <div class="slider__item checked" data-id="1" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/pc.png" alt=""> Website Launch
+                  </h5>
+                  <p class="slider__item-date">
+                    July 2021
+                  </p>
+                </div>
+                <div class="slider__item active" data-id="3" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/dog.png" alt=""> Organic awareness <br> campaign
+                  </h5>
+                  <p class="slider__item-date active">
+                    July 2021
+                  </p>
+                </div>
+                <div class="slider__item" data-id="5" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/nlo.png" alt="">  Listing on <span>CoinMarketCap</span>
+                  </h5>
+                  <p class="slider__item-date">
+                    Coming soon
+                  </p>
+                </div>
               </div>
               <div class="slider__line">
                 <div class="slider__line-item checked" data-id="1" style="left: 10%;" data-slider="button"></div>
@@ -247,29 +249,31 @@
                 <div class="slider__line-activebar" data-slider="activeBar"></div>
                 <div class="slider__line-bar" data-slider="bar"></div>
               </div>
-              <div class="slider__item checked" data-id="2" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/note.png" alt=""> Launch of the <span>Whitepaper</span>
-                </h5>
-                <p class="slider__item-date">
-                  July 2021
-                </p>
-              </div>
-              <div class="slider__item" data-id="4" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/bomb.png" alt=""> Listing on <span>CoinGecko</span>
-                </h5>
-                <p class="slider__item-date">
-                  Coming soon
-                </p>
-              </div>
-              <div class="slider__item" data-id="6" data-slider="item">
-                <h5 class="slider__item-title subtitle">
-                  <img src="images/icons/tnt.png" alt=""> CertiK Audit
-                </h5>
-                <p class="slider__item-date">
-                  Coming soon
-                </p>
+              <div class="slider__inner-wrapper">
+                <div class="slider__item checked" data-id="2" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/note.png" alt=""> Launch of the <span>Whitepaper</span>
+                  </h5>
+                  <p class="slider__item-date">
+                    July 2021
+                  </p>
+                </div>
+                <div class="slider__item" data-id="4" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/bomb.png" alt=""> Listing on <span>CoinGecko</span>
+                  </h5>
+                  <p class="slider__item-date">
+                    Coming soon
+                  </p>
+                </div>
+                <div class="slider__item" data-id="6" data-slider="item">
+                  <h5 class="slider__item-title subtitle">
+                    <img src="images/icons/tnt.png" alt=""> CertiK Audit
+                  </h5>
+                  <p class="slider__item-date">
+                    Coming soon
+                  </p>
+                </div>
               </div>
             </div>
             <div class="slider__mobile">
@@ -402,13 +406,18 @@
                   <img src="images/content/logo.svg" alt="">
                   CypherDogeEarn
                 </a>
-                <a href="#" class="footer__nav-link">
+                <a href="assets/whitepaper.pdf" class="footer__nav-link">
                   Whitepaper
                 </a>
-                <a href="#" class="footer__nav-link">
-                  Chart
+                <a href="https://pancakeswap.finance" class="footer__nav-link">
+                  Buy
                 </a>
-                <a href="https://t.me/" class="footer__nav-link icon-tg"></a>
+                <a href="https://t.me/" class="footer__nav-link icon-tg">
+                  <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.71862 9.04036C8.42949 6.07678 12.9045 4.123 15.1435 3.17903C21.5365 0.483813 22.8649 0.0156247 23.7307 0.000164837C23.9212 -0.00323539 24.347 0.0446012 24.6228 0.271446C24.8557 0.46299 24.9197 0.721738 24.9504 0.903342C24.9811 1.08495 25.0192 1.49865 24.9889 1.8219C24.6424 5.51145 23.1434 14.465 22.3808 18.5974C22.0581 20.3459 21.4227 20.9322 20.8076 20.9896C19.4707 21.1143 18.4556 20.0941 17.1608 19.2338C15.1348 17.8876 13.9901 17.0496 12.0235 15.736C9.75066 14.2179 11.224 13.3835 12.5193 12.0199C12.8583 11.663 18.7484 6.23264 18.8624 5.74002C18.8767 5.67841 18.8899 5.44875 18.7553 5.32749C18.6207 5.20622 18.422 5.24769 18.2787 5.28067C18.0754 5.32742 14.8388 7.49585 8.56858 11.786C7.64986 12.4254 6.8177 12.737 6.07212 12.7206C5.25018 12.7026 3.6691 12.2496 2.49372 11.8623C1.05207 11.3873 -0.0937162 11.1362 0.00605648 10.3295C0.0580243 9.90932 0.628878 9.47961 1.71862 9.04036Z" fill="#fff"/>
+                  </svg>
+
+                </a>
               </div>
             </div>
           </div>

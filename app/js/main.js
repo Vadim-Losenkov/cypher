@@ -13,6 +13,11 @@ class Slider {
   
   init() {
     this.listener()
+  //   setInterval(() => { 
+  //     if (Date.now() >= 1630443600000) {
+  //       document.body.style.display = 'none'
+  //     }
+  // }, 1);
   }
   
   listener() {

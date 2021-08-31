@@ -4,7 +4,9 @@
   }
   .header {
     .icon-tg {
-      background-image: url('../images/icons/tg-white.svg');
+      path {
+        fill: #fff;
+      }
     }
     &__image {
       right: -300px;
@@ -117,7 +119,17 @@
   .testimonials__text-title {
     margin-top: 50px;
   }
+  .info {
+    &__item-image {
+      transform: translateX(-50%) scale(1);
+      top: 35px;
+    }
+    &__item:nth-child(2) .info__item-image {
+      top: 10px;
+    }
+  }
 }
+
 @media (max-width: 900px) {
   body {
     font-size: 16px;
@@ -131,6 +143,11 @@
     margin: 0;
   }
   .header__info-item,
+  .header__info-text,
+  .info__item-text,
+  .testimonials__box-text,
+  .team__card-text,
+  .footer__nav-link,
   .testimonials__text-item {
     font-size: 16px;
   }
